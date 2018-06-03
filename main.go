@@ -13,5 +13,6 @@ const (
 func main() {
 	fmt.Println("Starting...")
 	http.HandleFunc("/ip", ipHandler)
+	http.HandleFunc("/", homeHandler)
 	log.Fatal(http.ListenAndServe(":"+port, nil))
 }

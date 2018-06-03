@@ -12,3 +12,6 @@ func ipHandler(w http.ResponseWriter, r *http.Request) {
 	log.Println(ip)
 }
 
+func homeHandler(w http.ResponseWriter, r *http.Request) {
+	fmt.Printf(w, "")
+}
