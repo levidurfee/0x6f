@@ -14,6 +14,7 @@ func main() {
 	fmt.Println("Starting...")
 	http.HandleFunc("/ip", ipHandler)
 	http.HandleFunc("/ip/html", ipHtmlHandler)
+	http.HandleFunc("/ip/json", ipJsonHandler)
 	http.HandleFunc("/", homeHandler)
 	log.Fatal(http.ListenAndServe(":"+port, nil))
 }
