@@ -13,5 +13,5 @@ func ipHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func homeHandler(w http.ResponseWriter, r *http.Request) {
-	fmt.Printf(w, "")
+	fmt.Fprintf(w, "")
 }
